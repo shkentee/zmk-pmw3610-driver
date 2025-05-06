@@ -155,6 +155,12 @@ config PMW3610_INVERT_SCROLL_Y
   bool "Invert the Y axis of the scroll"
   default PMW3610_INVERT_Y
 
+config PMW3610_SCROLL_X_DISABLE
+  bool "Disable horizontal scroll (X axis)"
+  default n
+  help
+    Disable horizontal scroll when this option is on.
+
 config PMW3610_AUTOMOUSE_TIMEOUT_MS
   int "Amount of milliseconds the mouse layer will be active after using the trackball"
   default 400
